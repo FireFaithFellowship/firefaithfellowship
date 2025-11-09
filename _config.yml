@@ -1,0 +1,21 @@
+
+title: Fire Faith Fellowship
+description: "The Gospel Distilled — open studies, no gatekeepers."
+theme: minima
+markdown: kramdown
+
+collections:
+  studies:
+    output: true
+    permalink: /studies/:name/
+
+defaults:
+  - scope: {path: "", type: "studies"}
+    values: {layout: study}
+
+exclude:
+  - llm
+  - license
+  - CONTRIBUTING.md
+  - README.md
+  - .gitignore

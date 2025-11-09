@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="meta"><em>{{ page.subtitle }}</em></p>{% endif %}
+  {{ content }}
+  {% if page.tags %}<p class="meta">Tags:
+    {% for t in page.tags %}<code>{{ t }}</code>{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>{% endif %}
+  <p><a class="btn" href="{{ '/studies/' | relative_url }}">&larr; Back to Studies</a></p>
+</article>

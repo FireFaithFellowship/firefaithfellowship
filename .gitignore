@@ -1,0 +1,10 @@
+# System
+.DS_Store
+Thumbs.db
+# Jekyll
+_site/
+# Python
+__pycache__/
+*.pyc
+# Local data
+llm/
